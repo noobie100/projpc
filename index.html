@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="functionality.js" defer></script>
+    <body>
+        <div id="res_container"></div>
+        <div id="canvas"></div>
+        <div id="main">
+            ----
+        </div>     
+        <div id="top" style="padding-bottom: 20px;">
+            <div id='op1' style="display:none;">
+                size(diag) in inches # <input type="text" id="size" ><br>
+                <button onclick="size2dpi()">Calculate DPI</button>
+                </div>
+            <div id='op2' style="display:none;">
+                dpi # <input type="text" id="dpi" ><br>
+                <button onclick="dpi2size()">Calculate Size</button>
+            </div>
+        </div>
+            <button onclick="show('op1')" id='op1button' style="display:none;">Size to DPI</button>
+            <button onclick="show('op2')" id='op2button'>DPI to Size</button>
+    </body>
+</html>
