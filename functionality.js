@@ -4,7 +4,7 @@ var wdt=window.screen.width;
 var hgt_scaled=hgt*scale;
 var wdt_scaled=wdt*scale;
 var r=wdt_scaled/hgt_scaled;
-console.log(r);
+// console.log(r);
 document.getElementById("res_container").innerHTML="<b>"+wdt_scaled+" x "+hgt_scaled+"</b><br><br>";
 
 document.getElementById("main").innerHTML=document.getElementById('op1').innerHTML;
@@ -12,8 +12,8 @@ document.getElementById("main").innerHTML=document.getElementById('op1').innerHT
 var output=document.getElementById('output');
 output.style.height= hgt_scaled/6+'px';
 output.style.width=wdt_scaled/6+'px';
-console.log(output.style.height);
-console.log(output.style.width);
+// console.log(output.style.height);
+// console.log(output.style.width);
 
 function show(parameter_id){
     document.getElementById("canvas").innerHTML="";
@@ -30,14 +30,12 @@ function show(parameter_id){
     }
 }
 
-
 function size2dpi(){
     var dpi;
     var d = document.getElementById("size").value;
     dpi= Math.sqrt(hgt_scaled*hgt_scaled+wdt_scaled*wdt_scaled)/d;
-    console.log(dpi);
+    // console.log(dpi);
     document.getElementById("result_text").innerHTML="<b>"+Math.round(dpi)+"</b>";
-
 }
 
 function dpi2size(){
@@ -46,6 +44,7 @@ function dpi2size(){
     var height=hgt_scaled/dpi;
     var width=wdt_scaled/dpi;
     var size=Math.sqrt(height*height + width*width);
-    console.log(size);
-    document.getElementById("result_text").innerHTML="<b>"+Math.round(size*10)/10+" inches</b>";
+    // console.log(size);
+    document.getElementById("result_text").innerHTML="<b>"+Math.round(size*10)/10+"</b><br>inches";
 }
+
