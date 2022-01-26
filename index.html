@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script type="text/javascript" src="functionality.js" defer></script>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
     <body >
-        <div id="content-container" style="margin:auto; height:fit-content; width:max-content; position: fixed; top:-40%; bottom:0; left:0; right:0; font-size:1.5em;">
-        <h1>Hello World!!!</h1>
-        <div id="res_container" ></div>
-        <div id="canvas"></div>
-        <div id="main" style="padding-bottom: 20px;">
-            ----
+        
+        <div id="content-container" style="margin:auto; height:fit-content; width:max-content; position: fixed; top:-30%; bottom:0; left:0; right:0; font-size:1.5em;">
+            <h1>Hello World!!!</h1>
+            <div id="res_container" ></div>
+            <div id="canvas"></div>
+            <div id="main" style="padding-bottom: 20px;">
+                ----
+            </div>
+            <div id="output" style="position: relative;">
+                <b id="result_text" style="position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -25px;"></b>
+            </div>
+            
+            <button onclick="show('op1')" id='op1button' style="display:none;">Size to DPI</button>
+            <button onclick="show('op2')" id='op2button'>DPI to Size</button>   
         </div>
-        <button onclick="show('op1')" id='op1button' style="display:none;">Size to DPI</button>
-        <button onclick="show('op2')" id='op2button'>DPI to Size</button>   
-        </div>
+
+        
           
         <div id="top">
-            <div id='op1' style="display:none;" >
-                size(diag) # <input type="text" id="size" ><br>
-                <button onclick="size2dpi()" >Calculate DPI</button>
-                </div>
+            <div id='op1' style="display:none; " >
+                size(diag) # <input type="text" id="size" oninput="size2dpi()"><br>
+                <!-- <button onclick="size2dpi()" >Calculate DPI</button> -->
+            </div>
             <div id='op2' style="display:none;" >
-                dpi # <input type="text" id="dpi"><br>
-                <button onclick="dpi2size()" >Calculate Size</button>
+                dpi # <input type="text" id="dpi" oninput="dpi2size()"><br>
+                <!-- <button onclick="dpi2size()" >Calculate Size</button> -->
             </div>
         </div>
-            
     </body>
 </html>
+
 
