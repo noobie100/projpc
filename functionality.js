@@ -4,7 +4,7 @@ var wdt=window.screen.width;
 var hgt_scaled=hgt*scale;
 var wdt_scaled=wdt*scale;
 var r=wdt_scaled/hgt_scaled;
-document.getElementById("res_container").innerHTML="<b>"+wdt_scaled+" x "+hgt_scaled+"</b><br><br>";
+document.getElementById("res_container").innerHTML="<br><b>"+wdt_scaled+" x "+hgt_scaled+"</b><br><br>";
 document.getElementById("main").innerHTML=document.getElementById('op1').innerHTML;
 linkWithResizer();
 size2dpi();
