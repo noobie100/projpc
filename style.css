@@ -7,7 +7,7 @@ max-height: 100%;
 #milk-shake{
 max-width: 100%;
 
-background-image:url("texture2.png");
+background-image:url("assets/texture2.png");
 background-repeat: repeat;
      box-shadow:inset 0 0  1px rgb(12, 12, 12);
      padding:20px 10px 25px 10px;
