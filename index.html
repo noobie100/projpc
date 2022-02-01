@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
 <script type="text/javascript" src="functionality.js" defer></script>
 
 
 <link rel="stylesheet" href="style.css">
 </head>
+
     <body >
-        
-        <div id="content-container" style="margin:auto; height:fit-content; width:max-content; position: fixed; top:-30%; bottom:0; left:0; right:0; font-size:1.5em;">
-            <strong>Know your DPI<strong><br>
-            <em>Site under development</em>
-            <div id="res_container" ></div>
+        <footer>
+            <p>&copy;<em>noobie <em>(Site under development. For enquiry/suggestion or for contributing please drop a mail to <a href = "mailto: screendpi.info@gmail.com">screendpi.info@gmail.com</a>)</em></em></p>
+            <div class="caution">
+                <strong>Note!</strong> For accurate results, zoom level must be set to 100% in your browser. All information in the Service is provided &quot;as is&quot;, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose.<br>We will not be liable to You or anyone else for any decision made or action taken in reliance on the information given by the Service or for any consequential, special or similar damages, even if advised of the possibility of such damages.
+              </div>
+        </footer>
+        <div id="content-container" style="margin:auto; height:fit-content; width:max-content; position: fixed; top:-20%; bottom:0; left:0; right:0; font-size:1.5em;">
+            <strong><u>Know your DPI</u><strong><br><br>
+
+            <b id='first_run'>Resolution is : </b>
+            <div id="res_container" > <input type="text" id="width_value" oninput="resolution();"> x <input type="text" id="length_value" oninput="resolution();"></div>
+            <div id="box-border" style="border: 0.4px solid; padding: 20px 50px 20px 50px; margin:20px;">
             <div id="main" style="padding-bottom: 20px;">
                 ----
             </div>
-            <div id='milk-shake'>
-            <div id="output" style="position: relative;">
-                <b id="result_text" style="position: absolute; top:20%;  width:100%; text-align: center; font-size: 40px;"></b>
 
-            </div></div>
-            <br>
-            <button onclick="show('op1')" id='op1button' style="display:none;">Go Back!</button>
-            <button onclick="show('op2')" id='op2button'>Don't know your Screen Size? Click here to know</button>   
+            <div id="top">
+                <div id='op1' style="display:none;" >Size:
+                    <select id = "myList" class='sameLine' onchange = "size2dpi();" >  <!--can be made hoverable-->
+                        <option> Diagonal </option>  
+                        <option> Width </option>  
+                        <option> Height </option>  
+                        </select>  
+                    <input type="text" class='sameLine' id="size" placeholder="size" value=15.6 oninput="size2dpi()"><br>
+                </div>
+                <div id='op2' style="display:none;" >
+                    DPI # <input type="text" id="dpi" placeholder="dpi" value=75  oninput="dpi2size()"><br>
+                </div>
+            </div>
             
-        </div>
+            <div id="output" style="position: relative;">
+                <b id="result_text" style="position: absolute; top:20%;  width:100%; text-align: center; font-weight: bold; font-style: italic;"></b>
 
-        
-          
-        <div id="top">
-            <div id='op1' style="display:none; " >
-                <select id = "myList" class='sameLine' onchange = "clearOutput(); size2dpi();" >  <!--can be made hoverable-->
-                    <option> Diagonal </option>  
-                    <option> Length </option>  
-                    <option> Height </option>  
-                    </select>  
-                <input type="text" class='sameLine' id="size" placeholder="size" value=15.6 oninput="size2dpi()"><br>
-                <!-- <button onclick="size2dpi()" >Calculate DPI</button> -->
             </div>
-            <div id='op2' style="display:none;" >
-                DPI # <input type="text" id="dpi" placeholder="dpi" value=75  oninput="dpi2size()"><br>
-                <!-- <button onclick="dpi2size()" >Calculate Size</button> -->
             </div>
+            <button onclick="show('op1')" id='op1button' class="button" style="display:none;">Go Back!</button>
+            <button onclick="show('op2')" id='op2button' class="button">Don't know your screen size? Click for DPI &#8646; SIZE </button>   <br>
+            
+    
         </div>
     </body>
- <footer>
-     &copy;<em>noobie</em>
-</footer>
-    
+ 
 </html>
-
-
-
