@@ -5,6 +5,9 @@ var hgt_scaled=hgt*scale;
 var wdt_scaled=wdt*scale;
 var r=wdt_scaled/hgt_scaled;
 // console.log(r)
+var siteWidth = 1280;
+var scale1 = screen.width /siteWidth;
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale1+'');
 
 document.getElementById("width_value").setAttribute("value",wdt_scaled);
 document.getElementById("length_value").setAttribute("value",hgt_scaled);
