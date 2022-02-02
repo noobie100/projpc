@@ -76,3 +76,6 @@ footer {
   text-align: auto;
   bottom:0;
 }
+#content-container{
+  max-height: 100%;
+}
