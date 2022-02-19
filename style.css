@@ -23,9 +23,10 @@ body{
   background-color: #d7cec7;
   background-image: linear-gradient(to right, #81a8e7 0%, #a2cde0 51%, #7ea7eb 100%);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: scroll;
   text-overflow: ellipsis;
-  margin:20px;
+  margin : 20px;
 
 }
 #result-text{
@@ -56,7 +57,8 @@ body{
 footer {
  position: fixed;
  justify-content: right;
- bottom:12%;
+ /* bottom:12%; */
+ margin:550px auto 0;
 }
 .button {
   background-image: linear-gradient(to right, #003cff 0%, #ffc400 100%);
