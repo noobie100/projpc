@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 #output {
 background-image: linear-gradient(to top left,rgb(0, 0, 0),rgb(128, 126, 126));
 
@@ -58,7 +61,8 @@ footer {
  position: fixed;
  justify-content: right;
  /* bottom:12%; */
- margin:550px auto 0;
+ margin:50px auto 0;
+ bottom:15%;
 }
 .button {
   background-image: linear-gradient(to right, #003cff 0%, #ffc400 100%);
@@ -76,7 +80,7 @@ footer {
   font-style:normal;
   position: fixed;
   text-align: auto;
-  bottom:0;
+  /* bottom:0; */
 }
 #content-container{
   max-height: 100%;
