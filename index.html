@@ -5,21 +5,56 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
 
-    <body class="col-md-4 col-sm-6">
-     
-        <footer class="mt-auto">
+<body class="col-md-4 col-sm-6">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+        <!-- <footer>
             <p>&copy;<em>noobie <em>(Site under development. For enquiry/suggestion or for contributing please drop a mail to <a href = "mailto: screendpi.info@gmail.com">screendpi.info@gmail.com</a>)</em></em></p><br>
             <div class="caution">
                 <strong>Note!</strong> For accurate results, zoom level must be set to 100% in your browser. All information in the Service is provided &quot;as is&quot;, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose.<br>We will not be liable to You or anyone else for any decision made or action taken in reliance on the information given by the Service or for any consequential, special or similar damages, even if advised of the possibility of such damages.
               </div>
-        </footer>
-        <div id="content-container" class="col-md-4 col-sm-6" style="margin:auto; height:fit-content; width:max-content; position: fixed; top:-20%; bottom:0; left:0; right:0; font-size:1.5em;">
-            <strong><u>Know your DPI</u><strong><br><br>
+        </footer> -->
+        <footer class="footer">
+            <div class="container col-md-12 col-sm-6 ">
+              <span class="text-muted"><strong>Note!</strong> For accurate results, zoom level must be set to 100% in your browser. All information in the Service is provided &quot;as is&quot;, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose.<br>We will not be liable to You or anyone else for any decision made or action taken in reliance on the information given by the Service or for any consequential, special or similar damages, even if advised of the possibility of such damages.</span>
+            </div>
+          </footer>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
 
+        <main role="main" class="container mt-5">
+          
+        <div id="content-container" class="container"  style="margin:auto; height:fit-content; width:max-content; position: fixed;top:-10%; bottom:0; left:0; right:0; font-size:1.5em;">
+            <strong><u>Know your DPI</u><strong><br><br>
+              
             <b id='first_run'>Resolution is : </b>
             <div id="res_container" > <input type="text" id="width_value" oninput="resolution();"> x <input type="text" id="length_value" oninput="resolution();"></div>
             <div id="box-border" style="border: 0.4px solid; padding: 20px 50px 20px 50px; margin:20px 0 20px 0;">
@@ -41,7 +76,7 @@
                 </div>
             </div>
             
-            <div id="output" style="position: relative;">
+            <div id="output" style="position: relative;" >
                 <b id="result_text" style="position: absolute; top:30%;  width:100%; text-align: center; font-weight: bold; font-style: italic;"></b>
 
             </div>
@@ -51,6 +86,7 @@
             
     
         </div>
+    </main>
     </body>
  
 </html>
