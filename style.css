@@ -62,7 +62,7 @@ footer {
  justify-content: right;
  /* bottom:12%; */
  margin:50px auto 0;
- bottom:15%;
+ bottom:0;
 }
 .button {
   background-image: linear-gradient(to right, #003cff 0%, #ffc400 100%);
@@ -85,3 +85,7 @@ footer {
 #content-container{
   max-height: 100%;
 }
+
+
+
+
