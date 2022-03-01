@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 #output {
 background-image: linear-gradient(to top left,rgb(0, 0, 0),rgb(128, 126, 126));
@@ -31,7 +32,9 @@ body{
   text-overflow: ellipsis;
   margin : 20px;
 
+
 }
+
 #result-text{
   /* font-style: italic; */
   /* font-weight: bold; */
@@ -57,7 +60,7 @@ body{
   border-radius: 0.4em;
   width:5ch;
 }
-footer {
+#footer {
  position: fixed;
  justify-content: right;
  /* bottom:12%; */
@@ -70,6 +73,8 @@ footer {
   color: white;
   padding: 10px 15px;
   font-size: 17px;
+  margin: auto; text-align: center;
+  width: fit-content;
 }
 .caution {
   margin: 10px 0 5px 0;
@@ -84,6 +89,25 @@ footer {
 }
 #content-container{
   max-height: 100%;
+
+}
+.navbar-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family:fantasy;
+}
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
 }
 
 
