@@ -36,12 +36,12 @@
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media only screen and (max-width: 767px) and (min-device-width: 375px)and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
+      .row.content {height:auto;width: auto;} 
     }
   </style>
 </head>
@@ -65,9 +65,6 @@
         <li><a href="#">Project Link</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
     </div>
   </div>
 </nav>
