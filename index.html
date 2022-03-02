@@ -3,7 +3,7 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=initial-scale=1" user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -36,7 +36,7 @@
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media only screen and (max-width: 767px) and (min-device-width: 375px)and (-webkit-min-device-pixel-ratio: 2){
+    @media only screen and (max-width: 767px) and (min-device-width: 375px)and (-webkit-min-device-pixel-ratio: 2) {
       .sidenav {
         height: auto;
         padding: 15px;
@@ -56,7 +56,6 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href=""><img src="logo.jpg" alt="" style="height:50px;width: 70px;"></a>
-      
       <p class="navbar-text"><b>Know Your DPI</b></p>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -66,23 +65,21 @@
         <li><a href="#">Project Link</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <!-- <div class="new_div" style="text-align: center; color: aliceblue;"><h1>Know Your DPI</h1></div> -->
-<!--       
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul> -->
     </div>
   </div>
 </nav>
-  
+
 <div class="container-fluid text-center">    
   <div class="row content">
-    <!-- <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav">
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
-    </div> -->
-    <div class="col-sm-12 text-center"> 
+    </div>
+    <div class="col-sm-8 text-center"> 
         <br><br>
               
             <b id='first_run'>Resolution is : </b>
@@ -92,7 +89,7 @@
                 ----
             </div>
 
-            <div id="top" class="col-sm-8 text-center">
+            <div id="top" class="text-center">
                 <div id='op1' style="display:none;" >Size:
                     <select id = "myList" class='sameLine' onchange = "size2dpi();" >  <!--can be made hoverable-->
                         <option> Diagonal </option>  
@@ -121,14 +118,14 @@
             <button onclick="show('op2')" id='op2button' class="button">Click for DPI &#8646; SIZE </button>   <br>
             
     </div>
-    <!-- <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav">
       <div class="well">
         <p>ADS</p>
       </div>
       <div class="well">
         <p>ADS</p>
       </div>
-    </div> -->
+    </div>
   </div>
 </div>
 
